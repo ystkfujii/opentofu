@@ -19,6 +19,7 @@ BUG FIXES:
 * S3 backend now correctly sends the `x-amz-server-side-encryption` header for the lockfile ([#2870](https://github.com/opentofu/opentofu/issues/2970))
 * Allow function calls in test variable blocks ([#2947](https://github.com/opentofu/opentofu/pull/2947))
 * The `issensitive` function now returns an unknown result when its argument is unknown, since a sensitive unknown value can potentially become non-sensitive once more information is available. ([#3008](https://github.com/opentofu/opentofu/pull/3008))
+* Provider references like "null.blah[each.key]" in .tf.json files are now correctly parsed ([#3022](https://github.com/opentofu/opentofu/pull/3022))
 
 ## Previous Releases
 
